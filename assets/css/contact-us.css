@@ -1,0 +1,248 @@
+.contact-us {
+    padding: 60px 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.title-contact {
+    font-size: 32px;
+    font-weight: 400;
+    line-height: 36.16px;
+    color: #3D434E;
+}
+
+.contact-us p {
+    font-size: 19px;
+    line-height: 26.22px;
+    padding: 6px 0px 50px;
+}
+
+.contact-form {
+    max-width: 610px;
+    width: 100%;
+}
+
+.contact-form form {
+    padding: 55px 88px;
+    background-color: var(--bg-color-white);
+    border-radius: 6px;
+    box-shadow: 0px 4px 8px 0px rgba(0, 0, 0, 0.02);
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    width: 100%;
+}
+
+.input-group input,
+.input-group textarea {
+    padding: 17px;
+    width: 100%;
+    border: 1px solid rgba(19, 34, 80, 0.15);
+    border-radius: 6px;
+    font-size: 18px;
+    line-height: 26px;
+}
+
+.input-group textarea {
+    padding: 17px 17px 70px 17px;
+}
+
+.input-group input:focus,
+.input-group textarea:focus {
+    border-color: #fc654b;
+    outline: none;
+    box-shadow: 0 0 10px 0 hsla(9, 97%, 64%, .2);
+}
+
+.btn-form__contact {
+    width: 100%;
+    border: 0;
+    background-color: var(--bg-color-orange);
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 24px;
+    color: var(--bg-color-white);
+    padding: 16px;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+
+
+
+/* Login */
+.login {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    flex-direction: column;
+}
+
+.login-content {
+    padding: 65px 82px;
+    background-color: var(--bg-color-white);
+    border-radius: 6px;
+    box-shadow: 0px 6px 6px 0px rgba(0, 0, 0, 0.02);
+}
+
+.login h3 {
+    font-size: 42px;
+    font-weight: 700;
+    line-height: 42px;
+    color: #000;
+    padding-bottom: 42px;
+}
+
+.login-form form {
+    max-width: 644px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 16px;
+}
+
+.login-button {
+    margin: 42px 0px 24px;
+    width: 100%;
+    border: 0;
+    background-color: var(--bg-color-orange);
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 24px;
+    color: var(--bg-color-white);
+    padding: 16px;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+.login-content a {
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 18px;
+    color: #1A8EF9;
+}
+
+.login-content a:hover {
+    color: #0068d6;
+}
+
+.login span {
+    margin-top: 60px;
+    max-width: 620px;
+    width: 100%;
+}
+
+.sign-up {
+    padding: 17px 19px;
+    text-align: left;
+    font-size: 18px;
+    line-height: 18px;
+    color: #5a5a5a;
+    border-radius: 6px;
+    box-shadow: 0px 6px 6px 0px rgba(0, 0, 0, 0.02);
+    background-color: rgba(0, 0, 0, 0.05);
+}
+
+.sign-up a {
+    font-weight: 600;
+    color: var(--bg-color-orange);
+}
+
+@media screen and (max-width: 700px) {
+    .contact-us {
+        padding: 40px 10px;
+    }
+
+    .contact-us p {
+        padding-bottom: 30px;
+    }
+
+    .contact-form form {
+        padding: 30px 30px;
+    }
+
+    .login {
+        padding: 0px 10px;
+    }
+
+    .login-content {
+        padding: 30px 40px;
+    }
+
+    .login h3 {
+        font-size: 32px;
+    }
+
+    .sign-up {
+        margin: 0 10px
+    }
+
+    .login span {
+        max-width: 430px;
+        margin-top: 30px;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .title-contact {
+        font-size: 26px;
+    }
+
+    .contact-us p {
+        padding-bottom: 20px;
+        font-size: 15px;
+    }
+
+    .contact-form form {
+        padding: 20px;
+    }
+
+    .input-group input,
+    .input-group textarea {
+        padding: 12px;
+        font-size: 13px;
+        line-height: 16px;
+    }
+
+    .input-group textarea {
+        font-size: 15px;
+    }
+
+    .btn-form__contact {
+        padding: 14px;
+    }
+
+    .login-content {
+        padding: 20px 30px;
+    }
+
+    .login h3 {
+        font-size: 26px;
+        padding-bottom: 26px;
+    }
+
+    .input-group input {
+        padding: 14px;
+        font-size: 15px;
+    }
+
+    .login-button {
+        margin: 30px 0 20px;
+        padding: 13px;
+    }
+
+    .sign-up {
+        margin: 0 10px;
+        padding: 15px 17px;
+        font-size: 15px;
+    }
+
+    .login span {
+        max-width: 340px;
+        margin-top: 30px;
+    }
+}
