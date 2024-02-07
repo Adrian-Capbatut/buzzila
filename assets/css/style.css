@@ -44,21 +44,77 @@ ul {
 
 
 /* Header */
-.header {
-    padding: 30px 20px;
+
+.nav-bar {
+    width: 100%;
     display: flex;
-    align-items: center;
     justify-content: space-between;
-}
-
-.header__links {
-    display: flex;
-    justify-content: center;
     align-items: center;
-    gap: ;
+    list-style: none;
+    position: relative;
+    background-color: #121212;
+    padding: 12px 20px;
 }
 
+.logo img {
+    width: 40px;
+}
 
+.menu {
+    display: flex;
+}
+
+.menu li {
+    padding-left: 30px;
+}
+
+.menu li a {
+    display: inline-block;
+    color: var(--bg-color-white);
+    text-align: center;
+    transition: 0.15s ease-in-out;
+    position: relative;
+    font-size: 16px;
+
+}
+
+.menu li a::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 0;
+    height: 1px;
+    background-color: var(--bg-color-white);
+    transition: 0.25s ease-in-out;
+}
+
+.menu li a:hover::after {
+    width: 100%;
+}
+
+.open-menu, .close-menu {
+    position: absolute;
+    color: var(--bg-color-white);
+    cursor: pointer;
+    font-size: 1.5rem;
+    display: none;
+}
+
+.open-menu {
+    top: 50%;
+    right: 20px;
+    transform: translateY(-50%);
+}
+
+.close-menu {
+    top: 20px;
+    right: 20px;
+}
+
+#check {
+    display: none;
+}
 
 /* Section Buy Instagram */
 .buy-instagram {
@@ -703,7 +759,38 @@ footer {
     }
 }
 
-@media screen and (max-width: 900px) {
+@media screen and (max-width: 922px) {
+    .menu {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        width: 80%;
+        height: 100vh;
+        position: fixed;
+        top: 0;
+        right: -100%;
+        z-index: 100;
+        background-color: #121212;
+        transition: all 0.2s ease-in-out;
+    }
+
+    .menu li {
+        margin-top: 10px;
+    }
+
+    .menu li a {
+        padding: 10px;
+        font-size: 20px;
+    }
+
+    .open-menu, .close-menu {
+        display: block;
+    }
+
+    #check:checked~.menu {
+        right: 0;
+    }
+
     .buy-instagram {
         gap: 30px;
     }
@@ -711,6 +798,7 @@ footer {
     .slider-photos__gallery div:nth-last-child(2) {
         display: none;
     }
+
 }
 
 @media screen and (max-width: 740px) {
