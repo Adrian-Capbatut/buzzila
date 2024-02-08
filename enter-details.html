@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Buy {option}</title>
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <link rel="stylesheet" href="./assets/css/details-buy.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body>
+    <div class="container">
+        <!-- Details Buy -->
+        <section class="details">
+            <div class="details-content">
+                <div class="detail-buy">
+                    <h2>Get Started</h2>
+                    <form action="/submit-your-form-endpoint" method="post">
+                        <div class="input-group">
+                            <i class="fa fa-instagram"></i>
+                            <input type="text" name="username" placeholder="Instagram username" required>
+                        </div>
+                        <div class="input-group">
+                            <i class="fa fa-envelope"></i>
+                            <input type="email" name="email" placeholder="Email address" required>
+                        </div>
+                        <div class="input-group">
+                            <i class="fa fa-users"></i>
+                            <select name="followers" required>
+                                <option value="100">100 followers - $2.97</option>
+                                <option value="250">250 followers - $4.99</option>
+                                <option value="500">500 followers - $6.99</option>
+                                <option value="1000">1000 followers - $12.99</option>
+                                <option value="2500">2500 followers - $29.99</option>
+                                <option value="5000">5000 followers - $39.99</option>
+                            </select>
+                        </div>
+                        <button type="submit" class="submit-btn">Continue</button>
+                    </form>
+
+                </div>
+
+                <div class="scan-detail">
+                    <div class="profile">
+                        <div class="user-img"> <img class="user-images" src="./assets/img/minion.jpg" alt=""></div>
+                        <div class="user-name">{Nume Instagram}</div>
+                    </div>
+
+                    <div class="total-buy">
+                        <div class="total-bought">
+                            <span><i class="fa fa-users"></i>
+                                <p>100 followers</p>
+                            </span>
+                            <span>
+                                <p>$2.97</p>
+                            </span>
+                        </div>
+                        <div class="total-payment">
+                            <span>Total to pay</span>
+                            <span>
+                                <p>$2.97</p>USD
+                            </span>
+                        </div>
+                    </div>
+
+                    <ul>
+                        <li><i class="fa fa-users"></i> <b>High quality</b> followers</li>
+                        <li><i class="fa fa-lock"></i> <b>No Instagram password</b> required</li>
+                        <li><i class="fa fa-rocket"></i> <b>Fast delivery</b>, up to 10 mins</li>
+                        <li><i class="fa fa-clock-o"></i> <b>24/7</b> support</li>
+                    </ul>
+
+                </div>
+            </div>
+
+        </section>
+    </div>
+</body>
+
+</html>
