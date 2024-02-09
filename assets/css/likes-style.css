@@ -588,8 +588,6 @@
     grid-template-columns: 1fr 1fr;
     max-width: 990px;
     gap: 60px;
-    /* margin-left: auto; */
-    /* margin-right: auto; */
 }
 
 .form-review form {
