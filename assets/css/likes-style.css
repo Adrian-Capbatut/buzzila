@@ -128,8 +128,36 @@
     border: 2px solid #333333;
 }
 
-.price-list__comments {
-    border-radius: 13px 13px 13px 13px;
+#price-list2 {
+    border: 2px solid var(--bg-color-blue-dark);
+    padding-top: -5px;
+    position: relative;
+    border-radius: 10px 0px 13px 13px;
+    display: none;
+}
+
+#price-list2 .button-price__list--active {
+    background-color: var(--bg-color-blue-dark);
+    color: var(--bg-color-white) !important;
+}
+
+#price-list2 .buy-now {
+    background-color: var(--bg-color-blue-dark);
+}
+
+#price-list2 .button-price__list {
+    color: var(--bg-color-blue-dark);
+}
+
+#price-list2 .price-content>span {
+    color: var(--bg-color-blue-dark);
+}
+
+.price-list__comments,
+.price-list__likes,
+.price-list__follower {
+    border-radius: 0px 13px 13px 13px;
+    background-color: #fff;
 }
 
 .automatic-buy {
@@ -236,7 +264,7 @@
     line-height: 30px;
     color: #999999;
     position: absolute;
-    margin-right: 110px;
+    margin-right: 135px;
 }
 
 .amount-money>b {

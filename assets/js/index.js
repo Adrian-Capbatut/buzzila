@@ -1,4 +1,46 @@
 document.addEventListener('DOMContentLoaded', () => {
+
+
+    // Schimbare pe butoanele de high si premium
+    var buttons = document.querySelectorAll('.categories-button button');
+    var contents = document.querySelectorAll('.content__prie .price');
+
+    function hideAllContents() {
+        contents.forEach(function (content) {
+            content.style.display = 'none';
+        });
+    }
+
+    function deactivateAllButtons() {
+        buttons.forEach(function (button) {
+            button.classList.remove('button-active');
+        });
+    }
+
+    function showContent(contentId) {
+        var content = document.getElementById(contentId);
+        if (content) {
+            content.style.display = 'block';
+        }
+    }
+
+    buttons.forEach(function (button) {
+        button.addEventListener('click', function () {
+            hideAllContents();
+            deactivateAllButtons();
+            button.classList.add('button-active');
+            var contentId = button.getAttribute('data-content');
+            showContent(contentId);
+        });
+    });
+
+    showContent('price-list1');
+    document.querySelector('.categories-button button[data-content="price-list1"]').classList.add('button-active');
+
+
+
+
+    // Adaugare carousel la comentarii dupa timp si dupa butoanele de inainte si inapoi
     document.getElementById('btn-left').addEventListener('click', () => {
         clearInterval(autoChangeInterval);
         currentIdx = (currentIdx - 1 + comments.length) % comments.length;
@@ -40,7 +82,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
 
 
-
+    // afisarea infoarmatiei pe care o are titlul din sectiunea Faq
     const faqItems = document.querySelectorAll('.faq-item');
 
     faqItems.forEach(item => {
