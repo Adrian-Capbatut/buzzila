@@ -477,6 +477,14 @@
     cursor: pointer;
 }
 
+.faq-item-active {
+    border-radius: 10px;
+    z-index: 200;
+    -webkit-box-shadow: 0px 0px 50px -6px rgba(34, 60, 80, 0.33);
+    -moz-box-shadow: 0px 0px 50px -6px rgba(34, 60, 80, 0.33);
+    box-shadow: 0px 0px 50px -6px rgba(34, 60, 80, 0.33);
+}
+
 .faq-item__title {
     position: relative;
 }
@@ -487,6 +495,10 @@
     line-height: 18px;
     text-transform: uppercase;
     color: #70717B;
+}
+
+.faq-item__title-active {
+    color: var(--bg-color-orange);
 }
 
 .faq-item__title>p:hover {
@@ -530,8 +542,11 @@
     transition: transform 0.7s ease;
 }
 
-/* Temporar. trebuie prin js */
-.accordion-toggle:hover::after {
+.faq-item-active .accordion-toggle::after {
+    transform: rotate(0deg);
+}
+
+.faq-item-active .accordion-toggle:hover::after {
     transform: rotate(0deg);
 }
 
@@ -694,6 +709,7 @@
     border-radius: 6px;
     width: 100%;
     height: 46px;
+    cursor: pointer;
 }
 
 .review__item {
