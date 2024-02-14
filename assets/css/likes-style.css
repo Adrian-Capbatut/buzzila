@@ -411,7 +411,7 @@
 }
 
 .work-items__services {
-    padding-top: 110px;
+    padding-top: 40px;
 }
 
 .works>p {
@@ -443,8 +443,10 @@
 }
 
 .card-service__img {
-    padding: 44px 0 31px;
-    object-fit: none;
+    padding: 40px 0 30px;
+    object-fit: cover;
+    max-width: 80px;
+    height: 140px;
 }
 
 .card-service__item>b {
@@ -465,6 +467,10 @@
 
 .card-service__item:hover {
     transform: translateY(-6px);
+    border: 1px solid #1d9ce5;
+    -webkit-box-shadow: 0px 5px 10px 2px rgba(15, 122, 204, 0.37);
+    -moz-box-shadow: 0px 5px 10px 2px rgba(15, 122, 204, 0.37);
+    box-shadow: 0px 5px 10px 2px rgba(15, 122, 204, 0.37);
 }
 
 
@@ -478,6 +484,7 @@
 }
 
 .faq-section>h2 {
+    text-align: center;
     font-size: 32px;
     font-weight: 600;
     line-height: 36.16px;
@@ -851,15 +858,17 @@
 
 @media screen and (max-width: 570px) {
     .work-items__services {
-        padding-top: 30px;
+        padding-top: 20px;
     }
 
     .card-service__item {
-        height: 200px;
+        height: 240px;
     }
 
     .card-service__img {
-        padding: 20px 0 15px;
+        padding: 0;
+        object-fit: contain;
+        max-width: 60px;
     }
 
     .card-service__item>b {
@@ -1025,6 +1034,10 @@
         padding: 30px 10px;
     }
 
+    .card-service__img {
+        max-width: 50px;
+    }
+
     .works>h2 {
         text-align: center;
     }
@@ -1077,4 +1090,10 @@
         margin-top: 30px;
     }
 
+}
+
+@media screen and (max-width: 380px) {
+    .form-review form {
+        width: 305px;
+    }
 }
