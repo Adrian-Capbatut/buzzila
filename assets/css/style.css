@@ -595,6 +595,32 @@ ul {
     border-radius: 10px;
 }
 
+@keyframes moveUp {
+    0%, 100% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-10px);
+    }
+}
+
+@keyframes moveDown {
+    0%, 100% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(10px);
+    }
+}
+
+.slider-photos__gallery div:nth-child(odd) .slider-photo {
+    animation: moveUp 2s infinite linear alternate;
+}
+
+.slider-photos__gallery div:nth-child(even) .slider-photo {
+    animation: moveDown 2s infinite linear alternate;
+}
+
 /* Carousel Comment */
 .carousel-comments {
     display: flex;
