@@ -75,7 +75,11 @@ ul {
     transition: 0.15s ease-in-out;
     position: relative;
     font-size: 16px;
+    letter-spacing: 0.7px;
+}
 
+.menu li a:hover {
+    letter-spacing: 2px;
 }
 
 .menu li a::after {
@@ -147,11 +151,35 @@ ul {
 }
 
 .title-instagram span {
-    color: var(--bg-color-orange);
+    /* color: var(--bg-color-orange); */
     font-size: 33px;
     font-weight: 400;
-    line-height: 37.29px
+    line-height: 37.29px;
+
+    text-transform: uppercase;
+  background-image: linear-gradient(
+    -225deg,
+    #2e6be4 0%,
+    #44107a 29%,
+    #ef4c82 67%,
+    #fff800 100%
+  );
+  background-size: auto auto;
+  background-clip: border-box;
+  background-size: 200% auto;
+  color: #fff;
+  background-clip: text;
+  text-fill-color: transparent;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: textclip 2s linear infinite;
 }
+
+@keyframes textclip {
+    to {
+      background-position: 200% center;
+    }
+  }
 
 .content-instagram {
     padding-top: 23px;
@@ -294,9 +322,23 @@ ul {
 .img__likes::after {
     content: url('/assets/img/like-after.png');
     position: absolute;
-    top: 23%;
+    top: -27px;
     left: 50%;
-    transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%) rotate(0);
+    transform-origin: bottom center;
+    animation: rotate-image 4s infinite alternate ease-in-out;
+}
+
+@keyframes rotate-image {
+    0%, 100% {
+        transform: translate(-50%, 0%) rotate(0);
+    }
+    25% {
+        transform: translate(-50%, 0%) rotate(25deg);
+    }
+    75% {
+        transform: translate(-50%, 0%) rotate(-25deg);
+    }
 }
 
 .img__likes::before {
@@ -304,7 +346,21 @@ ul {
     position: absolute;
     top: 30%;
     left: 50%;
-    transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%) rotate(0);
+    transform-origin: bottom center;
+    animation: reverse-rotate-image 4s infinite alternate ease-in-out;
+}
+
+@keyframes reverse-rotate-image {
+    0%, 100% {
+        transform: translate(-50%, -50%) rotate(0);
+    }
+    25% {
+        transform: translate(-50%, -50%) rotate(-30deg);
+    }
+    75% {
+        transform: translate(-50%, -50%) rotate(30deg); 
+    }
 }
 
 .content__like p, span {
@@ -412,6 +468,11 @@ ul {
     color: var(--bg-color-orange);
     font-size: 16px;
     text-decoration-line: underline;
+    cursor: pointer;
+}
+
+.item-process__content a:hover {
+    color: var(--bg-color-blue);
 }
 
 .item-process__content p {
@@ -802,6 +863,12 @@ footer {
     height: 26px;
 }
 
+.payment-icon:hover{
+    transform: translateY(-3px);
+    transition: .6s ease-in-out;
+    box-shadow: 0px 7px 6px 0px rgba(45, 147, 226, 0.4);
+}
+
 @media screen and (max-width: 1100px) {
     .slider-photos__gallery div:last-child {
         display: none;
@@ -1029,7 +1096,7 @@ footer {
 
     .footer-info {
         flex-direction: column;
-        align-items: start;
+        align-items: center;
         gap: 15px;
     }
 }

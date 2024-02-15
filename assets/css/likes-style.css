@@ -12,14 +12,20 @@
 }
 
 .like-content>span {
-    background-color: #EDEEF3;
+    background-color: #e3e6f8;
     padding: 6px 13px;
-    color: #7B7D86;
+    color: #565860;
     font-weight: 600;
     line-height: 22px;
     letter-spacing: 1px;
     text-transform: uppercase;
     border-radius: 16px;
+}
+
+.like-content>span:hover {
+    background-color: #1e3ef0a1;
+    color: #ffffff;
+    transition: .4s ease-in-out;
 }
 
 .like-content>h1 {
