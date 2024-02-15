@@ -305,6 +305,17 @@ ul {
 .phone__img {
     height: auto;
     /* width: 90%; */
+    position: relative;
+}
+
+.group__images-phone {
+    padding-top: 100px;
+    position: absolute;
+    z-index: 1;
+}
+
+.content__phone{
+    z-index: 20;
 }
 
 .content__like {
@@ -487,7 +498,6 @@ ul {
 }
 
 /* Section Works  repeat-more-pages */
-
 .works {
     padding: 44px 20px 58px;
     display: flex;
@@ -609,7 +619,7 @@ ul {
 }
 
 .author {
-    color: var(--bg-color-orange);
+    color:  var(--bg-color-blue);
     font-size: 13px;
     line-height: 20.67px;
     letter-spacing: 0.35px;
@@ -624,7 +634,7 @@ ul {
     position: absolute;
     left: -25px;
     top: 50%;
-    color: var(--bg-color-orange);
+    color:  var(--bg-color-blue);
     transform: translateY(-50%);
     margin-top: 8px;
 }
@@ -642,7 +652,6 @@ ul {
 
 .btn-carousel {
     background-color: var(--bg-color-white);
-    color: var(--bg-color-orange);
     padding: 20px;
     border-radius: 50%;
     border: none;
@@ -660,7 +669,7 @@ ul {
     content: '';
     position: absolute;
     border-radius: 10px;
-    background-color: var(--bg-color-orange);
+    background-color: var(--bg-color-blue);
     width: 10px;
     height: 2px;
 }
@@ -682,7 +691,7 @@ ul {
 }
 
 .btn-carousel:hover {
-    background-color: var(--bg-color-orange);
+    background-color:  var(--bg-color-blue);
 }
 
 .btn-carousel:hover::before,
