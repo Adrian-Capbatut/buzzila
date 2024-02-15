@@ -51,9 +51,9 @@
 
 .input-group input:focus,
 .input-group textarea:focus {
-    border-color: #fc654b;
+    border-color: #26b9e2;
+    box-shadow: 2px 2px 10px 0 rgba(31, 219, 247, 0.2);
     outline: none;
-    box-shadow: 0 0 10px 0 hsla(9, 97%, 64%, .2);
 }
 
 .btn-form__contact {
@@ -109,7 +109,7 @@
     margin: 42px 0px 24px;
     width: 100%;
     border: 0;
-    background-color: var(--bg-color-orange);
+    background-color: #2fcdf9;
     font-size: 18px;
     font-weight: 600;
     line-height: 24px;
@@ -117,17 +117,23 @@
     padding: 16px;
     border-radius: 6px;
     cursor: pointer;
+    letter-spacing: 1px;
+}
+
+.login-button:hover{
+    background-color: #2ab1d6;
+    letter-spacing: 1.8px;
 }
 
 .login-content a {
     font-size: 18px;
     font-weight: 600;
     line-height: 18px;
-    color: #1A8EF9;
+    color: var(--bg-color-orange);
 }
 
 .login-content a:hover {
-    color: #0068d6;
+    color: #2ab1d6;
 }
 
 .login span {
@@ -150,6 +156,10 @@
 .sign-up a {
     font-weight: 600;
     color: var(--bg-color-orange);
+}
+
+.sign-up a:hover {
+    color: #2ab1d6;
 }
 
 @media screen and (max-width: 700px) {
