@@ -62,10 +62,14 @@ ul {
 
 .menu {
     display: flex;
+    align-items: center;
+    gap: 30px;
 }
 
-.menu li {
-    padding-left: 30px;
+.menu-link__activ {
+    background-color: #6181eb;
+    padding: 15px 8px;
+    border-radius: 3px;
 }
 
 .menu li a {
@@ -953,10 +957,7 @@ footer {
         z-index: 100;
         background-color: #121212;
         transition: all 0.2s ease-in-out;
-    }
-
-    .menu li {
-        margin-top: 10px;
+        gap: 20px;
     }
 
     .menu li a {
@@ -1011,6 +1012,9 @@ footer {
 }
 
 @media screen and (max-width: 700px) {
+    .menu {
+        gap: 15px;
+    }
     .slider-photos__gallery div:nth-child(odd) {
         margin-bottom: 0px;
     }
@@ -1137,6 +1141,9 @@ footer {
 }
 
 @media screen and (max-width: 420px) {
+    .menu {
+        gap: 10px;
+    }
     .buy-instagram {
         gap: 15px;
     }
