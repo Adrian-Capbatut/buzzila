@@ -59,7 +59,7 @@
 .btn-form__contact {
     width: 100%;
     border: 0;
-    background-color: var(--bg-color-orange);
+    background-color: #2fcdf9;
     font-size: 18px;
     font-weight: 600;
     line-height: 24px;
@@ -67,6 +67,11 @@
     padding: 16px;
     border-radius: 6px;
     cursor: pointer;
+}
+
+.btn-form__contact:hover{
+    background-color: #2ab1d6;
+    letter-spacing: 1.8px;
 }
 
 
