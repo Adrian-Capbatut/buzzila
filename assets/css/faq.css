@@ -59,6 +59,10 @@
     box-shadow: 3px 0px 6px 0px rgba(156, 166, 175, 0.22);
 }
 
+.button-acctive img {
+    mix-blend-mode: plus-lighter;
+}
+
 .tab-content {
     background-color: var(--bg-color-white);
     border-radius: 6px;
