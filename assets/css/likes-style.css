@@ -611,7 +611,16 @@
     font-weight: 600;
     line-height: 40.68px;
     color: var(--bg-color-title);
-    padding-bottom: 28px;
+    padding-bottom: 18px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+.feedback-img {
+    max-width: 70px;
+    mix-blend-mode: darken;
 }
 
 .feedback>p {
@@ -905,7 +914,7 @@
 
     .feedback>h2 {
         font-size: 26px;
-        padding-bottom: 18px;
+        padding-bottom: 12px;
     }
 
     .feedback>p {
@@ -1079,7 +1088,7 @@
 
     .feedback>h2 {
         font-size: 20px;
-        padding-bottom: 14px;
+        padding-bottom: 9px;
     }
 
     .feedback>p {
